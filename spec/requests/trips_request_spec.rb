@@ -23,5 +23,17 @@ RSpec.describe 'Trips API' do
       expect(json_response['price']).to be_present
       expect(json_response['date']).to be_present
     end
+
+    context 'with invalid parameters' do
+      let(:params) { 'invalid_params' }
+
+      it 'returns the 400 status code' do
+        expect(response).to have_http_status(400)
+      end
+
+      it 'returns error messages' do
+        expect(json_response['errors']).to be_present
+      end
+    end
   end
 end
