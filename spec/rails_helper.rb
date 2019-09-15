@@ -15,6 +15,8 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 
+WebMock.disable_net_connect!(allow_localhost: true)
+
 RSpec.configure do |config|
   config.fixture_path = 'spec/fixtures/files'
 

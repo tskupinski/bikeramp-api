@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Trips API' do
+RSpec.describe 'Trips API', google_maps: true do
   describe 'POST /api/trips' do
     let(:path) { '/api/trips' }
 

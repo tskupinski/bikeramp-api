@@ -23,6 +23,11 @@ class TripForm
       trip.destination_address = destination_address
       trip.price = price
       trip.date = date
+      trip.distance = calculate_distance
     end
+  end
+
+  def calculate_distance
+    CalculateDistance.new(start_address, destination_address).call
   end
 end
