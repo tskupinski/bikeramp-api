@@ -22,3 +22,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :test do
+  gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
+  gem 'faker', '~> 2.3'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
+end
