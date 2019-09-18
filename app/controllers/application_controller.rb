@@ -12,4 +12,8 @@ class ApplicationController < ActionController::API
     errors = { errors: object.errors.messages }
     render json: errors, status: :bad_request
   end
+
+  def render_message(exception, status = :bad_request)
+    render json: exception.message, status: status
+  end
 end
