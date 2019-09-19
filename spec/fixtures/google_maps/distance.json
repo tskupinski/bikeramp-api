@@ -1,0 +1,26 @@
+{
+  "destination_addresses": [
+    "plac Europejski 2, 00-844 Warszawa, Poland"
+  ],
+  "origin_addresses": [
+    "Pańska 57, 00-001 Warszawa, Poland"
+  ],
+  "rows": [
+    {
+      "elements": [
+        {
+          "distance": {
+            "text": "1.0 km",
+            "value": 1045
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 211
+          },
+          "status": "OK"
+        }
+      ]
+    }
+  ],
+  "status": "OK"
+}

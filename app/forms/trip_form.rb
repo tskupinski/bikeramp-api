@@ -12,17 +12,18 @@ class TripForm
   validates :date, presence: true, timeliness: true
 
   def save
-    create_trip
-  end
-
-  private
-
-  def create_trip
     Trip.create! do |trip|
       trip.start_address = start_address
       trip.destination_address = destination_address
       trip.price = price
       trip.date = date
+      trip.distance = fetch_distance
     end
+  end
+
+  private
+
+  def fetch_distance
+    FetchDistance.new(start_address, destination_address).call
   end
 end

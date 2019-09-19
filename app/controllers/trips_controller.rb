@@ -1,4 +1,6 @@
 class TripsController < ApplicationController
+  rescue_from GoogleMaps::Error, with: :render_message
+
   def create
     submit_form(TripForm.new(trip_params))
   end

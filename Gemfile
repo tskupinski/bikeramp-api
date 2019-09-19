@@ -5,6 +5,8 @@ ruby '2.6.4'
 
 gem 'active_model_serializers', '~> 0.10.10'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+gem 'httparty', '~> 0.17.0'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0.0'
@@ -28,4 +30,6 @@ group :test do
   gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
   gem 'faker', '~> 2.3'
   gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
+  gem 'sinatra', '~> 2.0', '>= 2.0.7'
+  gem 'webmock', '~> 3.7', '>= 3.7.3'
 end
