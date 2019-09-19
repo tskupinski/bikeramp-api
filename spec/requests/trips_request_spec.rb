@@ -22,6 +22,7 @@ RSpec.describe 'Trips API', google_maps: true do
       expect(json_response['destination_address']).to be_present
       expect(json_response['price']).to be_present
       expect(json_response['date']).to be_present
+      expect(json_response['distance']).to be_present
     end
 
     context 'with invalid parameters' do
