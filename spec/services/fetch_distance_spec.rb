@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe FetchDistance, google_maps: true do
-  let(:start_address) { 'Address1' }
-  let(:destination_address) { 'Address2' }
+  let(:start_address) { 'Address 1' }
+  let(:destination_address) { 'Address 2' }
 
   subject { described_class.new(start_address, destination_address) }
 
