@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_09_15_144818) do
     t.date "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.float "distance"
+    t.integer "distance"
   end
 
 end
