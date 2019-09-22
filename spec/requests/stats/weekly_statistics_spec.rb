@@ -5,8 +5,8 @@ RSpec.describe 'Weekly Statistics API' do
 
   let(:path) { '/api/stats/weekly' }
 
-  let(:current_week_trips) { create_list(:trips, 2, distance: 2000, price: 10) }
-  let(:other_week_trip) { create(:trip, date: 2.weeks.from_now) }
+  let!(:current_week_trips) { create_list(:trip, 2, distance: 2000, price: 10) }
+  let!(:other_week_trip) { create(:trip, date: 2.weeks.from_now) }
 
 
   subject! { get path }
@@ -17,6 +17,6 @@ RSpec.describe 'Weekly Statistics API' do
 
   it 'returns weekly statistics' do
     expect(json_response['total_distance']).to eq('20km')
-    expect(json_resonse['total_price']).to eq('30.00PLN')
+    expect(json_response['total_price']).to eq('30.00PLN')
   end
 end
