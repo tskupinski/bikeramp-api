@@ -2,11 +2,11 @@ class WeeklyStatistics
   include ActiveModel::Serializers::JSON
 
   def total_distance
-    @total_distance ||= CalculateTotalDistance.new(weekly_trips).call
+    CalculateTotal.new(weekly_trips, :distance).call
   end
 
   def total_price
-    @total_price ||= CalculateTotalPrice.new(weekly_trips).call
+    CalculateTotal.new(weekly_trips, :price).call
   end
 
   private

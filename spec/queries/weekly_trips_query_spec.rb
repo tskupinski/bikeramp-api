@@ -6,7 +6,7 @@ RSpec.describe WeeklyTripsQuery do
   let!(:end_of_week_trip) { create(:trip, date: Date.current.end_of_week) }
 
   let!(:trip_from_another_week) { create(:trip, date: 2.weeks.ago) }
-  
+
   subject { described_class.new }
 
   it 'returns trips from this week' do
