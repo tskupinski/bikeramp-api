@@ -5,7 +5,9 @@ class CalculateAverage
   end
 
   def call
-    trips.average(attribute) || 0
+    return 0 if trips.empty?
+
+    trips.sum(&attribute) / trips.size
   end
 
   private

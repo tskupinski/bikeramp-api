@@ -13,7 +13,7 @@ class DailyStatistics
   end
 
   def avg_ride
-    CalculateAvarage.new(trips, :distance).call
+    CalculateAverage.new(trips, :distance).call
   end
 
   def avg_price
