@@ -6,12 +6,12 @@ class GoogleMaps::Client
   base_uri 'https://maps.googleapis.com'
 
   class << self
-    def fetch_distance(options)
+    def fetch_trip(options)
       options[:query].merge!(key: API_KEY)
       response = get('/maps/api/distancematrix/json?', options)
 
       if path_exists?(response)
-        google_trip(response)
+        build_google_trip(response)
       else
         raise_error(response)
       end
@@ -23,7 +23,7 @@ class GoogleMaps::Client
       response['status'] == 'OK' && response['rows'][0]['elements'][0]['status'] == 'OK'
     end
 
-    def google_trip(response)
+    def build_google_trip(response)
       GoogleMaps::Trip.new(response)
     end
 
