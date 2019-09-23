@@ -1,24 +1,42 @@
-# README
+# Bikeramp - simple bike trip tracker for couriers with weekly and monthly statistics
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Technology
 
-Things you may want to cover:
+| Name |  Version |
+| :--: | :---: |
+| [Ruby](https://www.ruby-lang.org) | 2.6.4 |
+| [Ruby on Rails](http://www.rubyonrails.org/) | 6.0.0 |
 
-* Ruby version
+## Links
 
-* System dependencies
+- [Heroku](https://bikeramp-staging-api.herokuapp.com/)
+- [Docs](https://backend-task.elpassion.com/#trips)
 
-* Configuration
+## Setup
 
-* Database creation
+#### Clone the repository
 
-* Database initialization
+    $ git clone https://github.com/tskupinski/bikeramp-api.git
 
-* How to run the test suite
+#### Install gems
 
-* Services (job queues, cache servers, search engines, etc.)
+    $ bundle install
 
-* Deployment instructions
+### Create your local database: 
 
-* ...
+    $ rails db:create
+    
+### Migrate your database:: 
+
+    $ rails db:migrate
+    
+### Seed database with examples:
+    
+    $ rails db:seed
+    
+### Run the application
+
+    $ rails server
+
+Your app should now be running on [localhost:3000](http://localhost:3000). 
+Please keep in mind that this is only API there are no views implemented.
