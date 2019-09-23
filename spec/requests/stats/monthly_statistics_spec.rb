@@ -9,9 +9,7 @@ RSpec.describe 'Monthly Statistics API' do
 
       create(:trip, distance: 1000, price: 10.00, date: 2.days.from_now.to_date)
       create(:trip, distance: 2000, price: 20.00, date: 2.days.from_now.to_date)
-
       create(:trip, distance: 2000, price: 20.00, date: 3.days.from_now.to_date)
-
 
       create(:trip, distance: 2000, price: 20.00, date: 1.month.from_now.to_date)
       create(:trip, distance: 2000, price: 20.00, date: 2.months.from_now.to_date)
