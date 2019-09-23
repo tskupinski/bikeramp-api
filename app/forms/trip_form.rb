@@ -9,7 +9,7 @@ class TripForm
   validates :start_address, presence: true
   validates :destination_address, presence: true
   validates :price, presence: true, numericality: true
-  validates :date, presence: true, timeliness: true
+  validates :date, presence: true, timeliness: { type: :date }
 
   def save
     Trip.create! do |trip|
