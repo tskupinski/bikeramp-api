@@ -9,7 +9,7 @@
 
 ## Links
 
-- [Heroku](https://bikeramp-staging-api.herokuapp.com/)
+- [Heroku](https://bikeramp-api-staging.herokuapp.com/)
 - [Docs](https://backend-task.elpassion.com/#trips)
 
 ## Setup
