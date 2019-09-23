@@ -17,7 +17,7 @@ class FetchDistance
   attr_reader :destination_address
 
   def trip
-    @trip ||= GoogleMaps::Client.fetch_distance(options)
+    @trip ||= GoogleMaps::Client.fetch_trip(options)
   end
 
   def options
