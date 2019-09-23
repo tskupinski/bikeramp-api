@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
     namespace :stats do
       resource :weekly, controller: :weekly_statistics, only: :show
+      resource :monthly, controller: :monthly_statistics, only: :show
     end
   end
 end
