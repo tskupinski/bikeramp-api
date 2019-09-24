@@ -10,6 +10,7 @@ gem 'httparty', '~> 0.17.0'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0.0'
+gem 'rollbar', '~> 2.22', '>= 2.22.1'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'validates_timeliness', '~> 4.1', '>= 4.1.1'
 
