@@ -31,6 +31,6 @@ group :test do
   gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
   gem 'faker', '~> 2.3'
   gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
-  gem 'sinatra', '~> 2.0', '>= 2.0.7'
+  gem 'sinatra', '~> 2.2'
   gem 'webmock', '~> 3.7', '>= 3.7.3'
 end
